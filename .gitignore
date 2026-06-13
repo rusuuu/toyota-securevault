@@ -1,0 +1,29 @@
+# Secrete - NICIODATĂ pe git
+.env
+*.env
+
+# Build artifacts
+target/
+**/target/
+*.jar
+!**/mvnw
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Maven
+.mvn/wrapper/maven-wrapper.jar
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Grafana export (opțional - conține doar config, nu secrete)
+# monitoring/grafana-dashboard.json
