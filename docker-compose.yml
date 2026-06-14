@@ -114,6 +114,7 @@ services:
       DB_HOST: toyota-postgres
       DB_USER: postgres
       DB_PASSWORD: password
+      GEMINI_API_KEY: ${GEMINI_API_KEY}
     depends_on:
       toyota-postgres:
         condition: service_healthy

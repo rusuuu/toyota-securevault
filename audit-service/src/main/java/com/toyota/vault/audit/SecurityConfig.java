@@ -17,6 +17,7 @@ public class SecurityConfig {
 
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/actuator/**").permitAll()
+                        .requestMatchers("/api/audit/ai-summary").permitAll()
                         .requestMatchers("/api/audit/**").authenticated()
                         .anyRequest().authenticated()
                 )
